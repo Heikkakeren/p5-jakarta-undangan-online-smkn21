@@ -4,13 +4,17 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const EventRundown = () => {
   const rundown = [
-    { time: '07:00 - 08:00', activity: 'Registrasi & Pembukaan', description: 'Registrasi peserta dan pembukaan acara' },
-    { time: '08:00 - 09:30', activity: 'Presentasi Proyek P5', description: 'Presentasi hasil proyek kearifan lokal' },
-    { time: '09:30 - 10:00', activity: 'Coffee Break', description: 'Istirahat dan networking' },
-    { time: '10:00 - 12:00', activity: 'Workshop Budaya', description: 'Workshop praktek kearifan lokal tradisional' },
-    { time: '12:00 - 13:00', activity: 'Makan Siang', description: 'Makan siang bersama dengan menu tradisional' },
-    { time: '13:00 - 14:30', activity: 'Pameran & Evaluasi', description: 'Pameran hasil karya dan evaluasi kegiatan' },
-    { time: '14:30 - 15:00', activity: 'Penutupan', description: 'Penutupan acara dan foto bersama' }
+    { time: '05:00 - 06:00', activity: 'Persiapan tempat dan perlengkapan', description: '📍 Lapangan & Multimedia' },
+    { time: '06:00 - 06:30', activity: 'Persiapan panitia dan MC', description: '📍 Lapangan & Multimedia' },
+    { time: '06:30 - 07:30', activity: 'Sterilisasi lokasi & Tarian Pembuka', description: '📍 Lapangan' },
+    { time: '07:30 - 08:42', activity: 'Pembukaan, doa, menyanyikan lagu Indonesia Raya, dan sambutan', description: '📍 Lapangan' },
+    { time: '08:42 - 08:55', activity: 'Sejarah Jakarta & Pembukaan Drama', description: '📍 Lapangan' },
+    { time: '08:55 - 09:37', activity: 'Pertunjukan Drama & Tarian', description: '📍 Lapangan' },
+    { time: '09:37 - 09:57', activity: 'Apresiasi & Pengarahan Fashion Show', description: '📍 Lapangan' },
+    { time: '09:57 - 10:27', activity: 'Fashion Show per kelas', description: '📍 Lapangan' },
+    { time: '10:27 - 10:47', activity: 'Penutupan, Flashmob, dan pengarahan sesi foto', description: '📍 Lapangan' },
+    { time: '10:47 - 11:52', activity: 'Sesi Foto: Kepala Sekolah, Guru, dan Kelas', description: '📍 Ruang Multimedia' },
+    { time: '11:52 - 12:00', activity: 'Pengarahan istirahat', description: '📍 Lapangan' }
   ];
 
   return (
