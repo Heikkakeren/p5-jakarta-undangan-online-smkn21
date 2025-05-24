@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 
 const LocationMap = () => {
   const handleOpenMap = () => {
-    const mapsUrl = 'https://maps.google.com/?q=SMKN+21+Jakarta+Jl.+Raya+Condet+No.1+Batu+Ampar+Kramat+Jati+Jakarta+Timur';
+    const mapsUrl = 'https://maps.google.com/?q=Jl.+Siaga+1+Gg.+swadaya+3+Kemayoran+Gempol+Jakarta+Indonesia+10630';
     window.open(mapsUrl, '_blank');
   };
 
@@ -21,8 +21,8 @@ const LocationMap = () => {
           </div>
           <h4 className="font-semibold text-lg text-maroon mb-2">SMKN 21 Jakarta</h4>
           <p className="text-gray-600 mb-4">
-            Jl. Raya Condet No.1, Batu Ampar<br />
-            Kramat Jati, Jakarta Timur
+            Jl. Siaga 1 Gg. swadaya 3<br />
+            Kemayoran Gempol, Jakarta, Indonesia 10630
           </p>
           <Button 
             onClick={handleOpenMap}

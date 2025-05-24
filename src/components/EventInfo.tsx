@@ -8,7 +8,7 @@ const EventInfo = () => {
     date: 'Rabu, 28 Mei 2025',
     time: '07:00 - 15:00 WIB',
     location: 'SMKN 21 Jakarta',
-    address: 'Jl. Raya Condet No.1, Batu Ampar, Kramat Jati, Jakarta Timur'
+    address: 'Jl. Siaga 1 Gg. swadaya 3 Kemayoran Gempol, Jakarta, Indonesia 10630'
   };
 
   return (
