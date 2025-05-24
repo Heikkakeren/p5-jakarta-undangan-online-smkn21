@@ -1,27 +1,283 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan P5 SMKN 21 Jakarta - Kearifan Lokal</title>
-    <meta name="description" content="Undangan Proyek Penguatan Profil Pelajar Pancasila (P5) SMKN 21 Jakarta dengan tema Kearifan Lokal" />
-    <meta name="author" content="SMKN 21 Jakarta" />
+    <meta name="description" content="Undangan Proyek Penguatan Profil Pelajar Pancasila (P5) SMKN 21 Jakarta dengan tema Kearifan Lokal">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- RSVP Modal -->
+    <div id="rsvpModal" class="modal active">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Undangan P5 SMKN 21 Jakarta</h2>
+                <p class="modal-subtitle">Tema: Kearifan Lokal</p>
+            </div>
+            <form id="rsvpForm" class="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="attendance">Jumlah yang Hadir</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">Pilih jumlah</option>
+                        <option value="1">1 orang</option>
+                        <option value="2">2 orang</option>
+                        <option value="3">3 orang</option>
+                        <option value="4">4 orang</option>
+                        <option value="5">5+ orang</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Masuk ke Undangan
+                </button>
+            </form>
+        </div>
+    </div>
 
-    <meta property="og:title" content="Undangan P5 SMKN 21 Jakarta - Kearifan Lokal" />
-    <meta property="og:description" content="Undangan Proyek Penguatan Profil Pelajar Pancasila (P5) SMKN 21 Jakarta dengan tema Kearifan Lokal" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title">Undangan P5 SMKN 21 Jakarta</h1>
+                <p class="header-subtitle">Tema: Kearifan Lokal</p>
+                <div class="batik-pattern"></div>
+            </div>
+        </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <!-- Hero Section with Countdown -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Countdown Menuju Acara</h2>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <label>Hari</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <label>Jam</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <label>Menit</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <label>Detik</label>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Event Info -->
+        <section class="event-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Tanggal</h3>
+                        <p>Rabu, 28 Mei 2025</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Waktu</h3>
+                        <p>07:00 - 15:00 WIB</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lokasi</h3>
+                        <p class="location-name">SMKN 21 Jakarta</p>
+                        <p class="location-address">Jl. Siaga 1 Gg. swadaya 3 Kemayoran Gempol, Jakarta, Indonesia 10630</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map -->
+        <section class="location-map">
+            <div class="container">
+                <div class="map-card">
+                    <div class="map-header">
+                        <h3>Lokasi Acara</h3>
+                    </div>
+                    <div class="map-content">
+                        <div class="map-placeholder">
+                            <i class="fas fa-external-link-alt"></i>
+                            <h4>SMKN 21 Jakarta</h4>
+                            <p>Jl. Siaga 1 Gg. swadaya 3<br>Kemayoran Gempol, Jakarta, Indonesia 10630</p>
+                            <button onclick="openGoogleMaps()" class="btn-map">
+                                <i class="fas fa-external-link-alt"></i>
+                                Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Rundown -->
+        <section class="event-rundown">
+            <div class="container">
+                <div class="rundown-card">
+                    <div class="rundown-header">
+                        <h2>Rundown Acara</h2>
+                    </div>
+                    <div class="rundown-content">
+                        <div class="rundown-item">
+                            <div class="rundown-time">05:00 - 06:00</div>
+                            <div class="rundown-details">
+                                <h4>Persiapan tempat dan perlengkapan</h4>
+                                <p>📍 Lapangan & Multimedia</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">06:00 - 06:30</div>
+                            <div class="rundown-details">
+                                <h4>Persiapan panitia dan MC</h4>
+                                <p>📍 Lapangan & Multimedia</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">06:30 - 07:30</div>
+                            <div class="rundown-details">
+                                <h4>Sterilisasi lokasi & Tarian Pembuka</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">07:30 - 08:42</div>
+                            <div class="rundown-details">
+                                <h4>Pembukaan, doa, menyanyikan lagu Indonesia Raya, dan sambutan</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">08:42 - 08:55</div>
+                            <div class="rundown-details">
+                                <h4>Sejarah Jakarta & Pembukaan Drama</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">08:55 - 09:37</div>
+                            <div class="rundown-details">
+                                <h4>Pertunjukan Drama & Tarian</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">09:37 - 09:57</div>
+                            <div class="rundown-details">
+                                <h4>Apresiasi & Pengarahan Fashion Show</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">09:57 - 10:27</div>
+                            <div class="rundown-details">
+                                <h4>Fashion Show per kelas</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">10:27 - 10:47</div>
+                            <div class="rundown-details">
+                                <h4>Penutupan, Flashmob, dan pengarahan sesi foto</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">10:47 - 11:52</div>
+                            <div class="rundown-details">
+                                <h4>Sesi Foto: Kepala Sekolah, Guru, dan Kelas</h4>
+                                <p>📍 Ruang Multimedia</p>
+                            </div>
+                        </div>
+                        <div class="rundown-item">
+                            <div class="rundown-time">11:52 - 12:00</div>
+                            <div class="rundown-details">
+                                <h4>Pengarahan istirahat</h4>
+                                <p>📍 Lapangan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h2 class="section-title">Galeri Dokumentasi</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Dokumentasi 1</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Dokumentasi 2</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Dokumentasi 3</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Dokumentasi 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <div class="container">
+                <h2 class="section-title">Kontak Person</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 xxx-xxxx-xxxx</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@smkn21jakarta.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 SMKN 21 Jakarta. Semua hak dilindungi.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
